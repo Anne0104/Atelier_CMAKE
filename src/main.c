@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "calculator.h"
 
 int main(int argc, char *argv[]){
     // Gestion de la fonction carré (3 arguments)
