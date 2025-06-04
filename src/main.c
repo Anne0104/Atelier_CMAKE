@@ -1,24 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "./../include/calculator.h"
 //
 int main(int argc, char *argv[]){
-    // Gestion de la fonction carré (3 arguments)
-    if (argc == 3) {
-        char* op = argv[1];
-        char* a = argv[2];
-        double r = 0;
-        
+   if (argc == 3) {
+        char op = argv[1];
+        charx_str = argv[2];
+        double résultat = 0;
+
         if (strcmp(op, "car") == 0) {
-            r = _car(atof(a));
-            printf("%lf", r);
+    // Convertir x_str en double, appeler _car et afficher le résultat
+            double x = atof(x_str);
+            résultat = _car(x);
+        printf("%lf", résultat);
+            return 0;
+            }
+        // Si ce n'est pas "car", on tombe sur l'erreur de paramètres
+            printf("Erreur de parametres\n");
+            return 1;
         }
-        else {
-            printf("Erreur de parametres");
-        }
-    }
     // Gestion des autres fonctions (4 arguments)
-    else if (argc == 4) {
+    if (argc == 4) {
         char* op = argv[1];
         char* a = argv[2];
         char* b = argv[3];
