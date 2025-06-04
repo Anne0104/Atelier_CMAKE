@@ -2,11 +2,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include "./../include/calculator.h"
-//
+
+
 int main(int argc, char *argv[]){
-   if (argc == 3) {
-        char op = argv[1];
-        charx_str = argv[2];
+   if (argc == 3) 
+   {
+        char* op = argv[1];
+        char* x_str = argv[2];
         double résultat = 0;
 
         if (strcmp(op, "car") == 0) {
